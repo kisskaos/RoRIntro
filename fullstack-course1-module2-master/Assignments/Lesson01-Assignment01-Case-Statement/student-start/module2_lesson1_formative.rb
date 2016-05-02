@@ -1,6 +1,6 @@
 some_var = false
 another_var = nil
-
+ 
 case some_var
   when "pink elephant"
     puts "Don't think about the pink elephant!"
