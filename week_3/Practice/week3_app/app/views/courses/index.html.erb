@@ -1,0 +1,19 @@
+<h1>Courses#index</h1>
+<p>Find me in app/views/courses/index.html.erb</p>
+
+<h1>Searching for - <%= @search_term %></h1>
+
+<table border="1">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Course Type</th>
+  </tr>
+  <% @courses.each do |course| %>
+    <tr>
+      <td><%= course["id"]%></td>
+      <td><%= course["name"] %></td>
+      <td><%= course["courseType"] %></td>
+    </tr>
+  <% end %>
+</table>
